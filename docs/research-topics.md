@@ -1,6 +1,6 @@
 # Research Topics
 
-本页用于整理 AI coding / vibe coding / agent 方向值得持续关注的研究问题、主题版图与潜在选题方向，重点服务实验室科研讨论。
+本页用于整理 AI coding（Vibe Coding）/ Coding Agent 方向值得持续关注的研究问题、主题版图与潜在选题方向，重点服务实验室科研讨论。
 
 ## 本页建议覆盖
 

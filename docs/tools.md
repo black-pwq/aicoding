@@ -1,13 +1,13 @@
 # Tools
 
-本页用于整理 AI coding / vibe coding / agent 相关工具、开发环境和系统框架，服务于学习体验、实验搭建与工程实践。
+本页用于整理 AI coding（Vibe Coding）/ Coding Agent 相关工具、开发环境和系统框架，服务于学习体验、实验搭建与工程实践。
 
 ## 本页建议覆盖
 
 - AI coding tools
 - IDE / editor integrations
-- coding agents
-- agent frameworks
+- Coding Agent tools
+- Coding Agent frameworks
 - orchestration / workflow tools
 - evaluation or tracing tools
 

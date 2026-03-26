@@ -1,12 +1,12 @@
 # Papers
 
-本页用于整理 AI coding / vibe coding / agent 方向的重要论文，服务于论文阅读、研究追踪与选题分析。
+本页用于整理 AI coding（Vibe Coding）/ Coding Agent 方向的重要论文，服务于论文阅读、研究追踪与选题分析。
 
 ## 本页建议覆盖
 
 - survey / review
 - foundational papers
-- coding agent systems
+- Coding Agent systems
 - benchmark papers
 - empirical studies
 - safety / trust / evaluation

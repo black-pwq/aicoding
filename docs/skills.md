@@ -1,6 +1,6 @@
 # Skills
 
-本页用于整理与 AI coding / vibe coding / agent 相关的 skill、workflow、prompt 模板和实践经验。
+本页用于整理与 AI coding（Vibe Coding）/ Coding Agent 相关的 skill、workflow、prompt 模板和实践经验。
 
 ## 本页建议覆盖
 

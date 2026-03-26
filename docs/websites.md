@@ -1,6 +1,6 @@
 # Websites
 
-本页用于整理与 AI coding / vibe coding / agent 相关的网站、官方页面、社区入口和持续跟踪资源。
+本页用于整理与 AI coding（Vibe Coding）/ Coding Agent 相关的网站、官方页面、社区入口和持续跟踪资源。
 
 ## 本页建议覆盖
 

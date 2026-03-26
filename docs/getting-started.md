@@ -1,13 +1,13 @@
 # Getting Started
 
-本页面向刚接触 AI coding / vibe coding / agent 方向的实验室成员，目标是帮助快速建立基础概念、阅读顺序和学习路径。
+本页面向刚接触 AI coding（Vibe Coding）/ Coding Agent 方向的实验室成员，目标是帮助快速建立基础概念、阅读顺序和学习路径。
 
 ## 本页建议覆盖
 
 - 什么是 AI coding
-- 什么是 vibe coding
-- 什么是 agent
-- 这三个概念之间的关系
+- 什么是 Vibe Coding
+- 什么是 Coding Agent
+- AI coding、Vibe Coding 与 Coding Agent 之间的关系
 - 建议的入门阅读顺序
 - 建议优先了解的工具与 benchmark
 

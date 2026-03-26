@@ -1,6 +1,6 @@
 # Benchmarks
 
-本页用于整理 AI coding / vibe coding / agent 方向常见 benchmark、评测任务和实验参考资源，服务于实验设计与研究比较。
+本页用于整理 AI coding（Vibe Coding）/ Coding Agent 方向常见 benchmark、评测任务和实验参考资源，服务于实验设计与研究比较。
 
 ## 本页建议覆盖
 
@@ -8,7 +8,7 @@
 - repo-level benchmarks
 - feature-level benchmarks
 - code generation / repair / editing tasks
-- agent evaluation settings
+- Coding Agent evaluation settings
 
 ## 推荐组织方式
 

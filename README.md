@@ -1,23 +1,23 @@
 # AICoding
 
-面向实验室学习与科研需求的 AI coding / vibe coding / agent 资源归集项目。
+面向实验室学习与科研需求的 AI coding（Vibe Coding）/ Coding Agent 资源归集项目。
 
 ## 项目简介
 
-AICoding 是一个公开维护、实验室优先使用的资源索引项目，聚焦 AI coding、vibe coding 与 agent 方向，系统整理论文、工具、网站、技能、评测基准与开源项目，帮助实验室成员更高效地学习、阅读、选题、实验与研究。
+AICoding 是一个公开维护、实验室优先使用的资源索引项目，聚焦 AI coding（Vibe Coding）与 Coding Agent 方向，系统整理论文、工具、网站、技能、评测基准与开源项目，帮助实验室成员更高效地学习、阅读、选题、实验与研究。
 
 本项目当前主要服务于实验室师生的学习与科研需求，同时以公开仓库的方式持续积累和完善，希望逐步形成一个结构清晰、可长期维护的方向知识入口。
 
 ## 项目目标
 
-- 帮助新成员快速入门 AI coding / vibe coding / agent
+- 帮助新成员快速入门 AI coding（Vibe Coding）/ Coding Agent
 - 支持实验室成员系统追踪核心论文、工具与 benchmark
 - 服务研究选题、论文阅读、实验设计与工程实现
 - 沉淀实验室共享知识与可复用资源
 
 ## 面向对象
 
-- 对 AI coding / vibe coding / agent 感兴趣的实验室新成员
+- 对 AI coding（Vibe Coding）/ Coding Agent 感兴趣的实验室新成员
 - 开展相关研究的研究生、本科生和教师
 - 需要查找论文、工具、benchmark 和开源项目的研究者
 - 对该方向感兴趣的工程实践者
@@ -120,7 +120,7 @@ aicoding/
 
 ## 项目定位说明
 
-本项目当前并不追求做成“全网最全资源库”，而是优先做成一个公开维护、实验室优先使用的 AI coding / vibe coding / agent 学习与科研资源索引库。
+本项目当前并不追求做成“全网最全资源库”，而是优先做成一个公开维护、实验室优先使用的 AI coding（Vibe Coding）/ Coding Agent 学习与科研资源索引库。
 
 在此基础上，随着内容积累与使用反馈增加，再逐步扩展其开放性与公共价值。
 
