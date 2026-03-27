@@ -43,7 +43,6 @@ aicoding/
 └── docs/
     ├── tools.md
     ├── skills.md
-    ├── openclaw.md
     ├── websites.md
     ├── getting-started.md
     ├── benchmarks.md
@@ -69,9 +68,8 @@ aicoding/
 
 1. 先浏览 [tools.md](docs/tools.md) 和 [skills.md](docs/skills.md)，建立工具感知
 2. 再阅读 [getting-started.md](docs/getting-started.md)，建立概念和入门路径
-3. 对热点项目感兴趣时进入 [openclaw.md](docs/openclaw.md)
-4. 然后了解 [benchmarks.md](docs/benchmarks.md) 和 [papers.md](docs/papers.md)
-5. 最后结合 [research-topics.md](docs/research-topics.md) 思考潜在兴趣点
+3. 然后了解 [benchmarks.md](docs/benchmarks.md) 和 [papers.md](docs/papers.md)
+4. 最后结合 [research-topics.md](docs/research-topics.md) 思考潜在兴趣点
 
 ### 对工程实践导向的同学
 
