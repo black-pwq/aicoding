@@ -19,7 +19,12 @@
 - [Anthropic Claude 101](https://anthropic.skilljar.com/claude-101)
   Anthropic 提供的免费课程，适合作为实验室成员第一次系统接触 Claude 使用方式的入口。
 
-### 3. Benchmark 与模型选型入口
+### 3. 最佳实践
+
+- [Vibe Coding 指南（中文）](https://github.com/tukuaiai/vibe-coding-cn)
+  一个偏中文实践导向的 Vibe Coding 指南仓库，整理了入门路径、方法论、提示词、案例与工作流，适合作为持续参考的实践资料。
+
+### 4. Benchmark 与模型选型入口
 
 - [XSCT Bench](https://xsct.ai/)
   一个面向真实任务场景的评测网站，适合用来观察模型在具体任务上的表现，也适合作为模型选型参考入口。
