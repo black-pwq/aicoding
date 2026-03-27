@@ -1,15 +1,15 @@
 # Tools
 
-本页用于整理 AI coding（Vibe Coding）/ Coding Agent 相关工具、开发环境和支撑基础设施，服务于学习体验、实验搭建与工程实践。
+本页用于整理 AI coding（Vibe Coding）/ Coding Agent 相关工具、开发环境和支撑工具，服务于学习体验、实验搭建与工程实践。
 
 ## 分类原则
 
 本页优先按“是否直接帮助用户完成任务”来组织工具，再在每一类下按具体角色继续细分：
 
-- 直接完成任务的工具：可以直接借助大模型能力参与分析、编码、修改工程或执行开发任务。
-- 辅助型工具与基础设施：不直接替用户完成任务，但为 AI coding 工作流提供模型接入、会话管理、远程协作等支撑能力。
+- 直接工具：可以直接借助大模型能力参与分析、编码、修改工程或执行开发任务。
+- 辅助型工具：不直接替用户完成任务，但为 AI coding 工作流提供文献管理、会话管理、远程协作、模型接入等支撑能力。
 
-## 直接完成任务的工具
+## 直接工具
 
 ### 1. CLI Coding Agents
 
@@ -20,18 +20,17 @@
 - [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli)
   GitHub 提供的命令行 Copilot 入口，适合和 GitHub 工作流、autopilot 模式、插件生态一起看。
 
-## 辅助型工具与基础设施
+### 2. 热门开源 Agent / 专题工具
 
-### 1. 模型接入与中转
+- [OpenClaw 专题页](openclaw.md)
+  OpenClaw 既可以被看作一个值得直接体验的开源 AI assistant / agent，也值得作为一个正在快速演化的热点项目持续跟踪，因此放在直接工具下面单独列出。
 
-- [Sub2API](https://github.com/Wei-Shaw/sub2api)
-  一个面向订阅额度分发与 API Key 管理的 AI API gateway platform，强调多账户管理、鉴权计费、负载调度、并发控制和管理面板，适合作为 Claude Code、Codex、Gemini 等上层工具的模型接入层。
-- [One API](https://github.com/songquanpeng/one-api)
-  一个较有代表性的通用大模型聚合网关，强调通过 OpenAI 兼容接口统一接入多家模型服务，适合用来理解“模型聚合与统一 API 暴露”这一类系统。
-- [One Hub](https://github.com/MartialBE/one-hub)
-  一个基于 `one-api` 演化的增强分支，强调新的 UI、供应商管理、监控统计、价格更新和多供应商支持，适合关注面板与运维能力增强的读者继续跟踪。
-- [Claude Relay Service](https://github.com/Wei-Shaw/claude-relay-service)
-  一个面向 Claude 访问场景的专项 relay 服务，强调多账户管理、Claude API 中转与自建部署；其 README 中也提示新项目可优先关注 `sub2api` 这一代方案。
+## 辅助型工具
+
+### 1. 科研与知识管理
+
+- [Zotero](https://www.zotero.org/)
+  一个常用的文献管理工具，适合整理 AI coding / Coding Agent 方向的论文、网页、笔记与引用信息。对于需要长期积累论文阅读记录和选题资料的实验室用户，它比普通书签工具更适合作为基础研究工具。
 
 ### 2. 终端与会话管理
 
@@ -43,10 +42,16 @@
 - [Happy Coder](https://happy.engineering/docs/)
   一个面向 Claude Code、Codex 等 AI coding agents 的移动端与远程控制工具，适合“离开工位后继续看 agent 在做什么”这类场景。
 
-## 热点项目专题
+### 4. 模型接入与中转
 
-- [OpenClaw 专题页](openclaw.md)
-  OpenClaw 最近热度较高，建议单独跟踪，不只把它当作普通工具条目处理。
+- [Sub2API](https://github.com/Wei-Shaw/sub2api)
+  一个面向订阅额度分发与 API Key 管理的 AI API gateway platform，强调多账户管理、鉴权计费、负载调度、并发控制和管理面板，适合作为 Claude Code、Codex、Gemini 等上层工具的模型接入层。
+- [One API](https://github.com/songquanpeng/one-api)
+  一个较有代表性的通用大模型聚合网关，强调通过 OpenAI 兼容接口统一接入多家模型服务，适合用来理解“模型聚合与统一 API 暴露”这一类系统。
+- [One Hub](https://github.com/MartialBE/one-hub)
+  一个基于 `one-api` 演化的增强分支，强调新的 UI、供应商管理、监控统计、价格更新和多供应商支持，适合关注面板与运维能力增强的读者继续跟踪。
+- [Claude Relay Service](https://github.com/Wei-Shaw/claude-relay-service)
+  一个面向 Claude 访问场景的专项 relay 服务，强调多账户管理、Claude API 中转与自建部署；其 README 中也提示新项目可优先关注 `sub2api` 这一代方案。
 
 ## 后续可补充内容
 

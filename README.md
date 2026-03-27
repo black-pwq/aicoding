@@ -55,12 +55,11 @@ aicoding/
 
 1. [Tools](docs/tools.md)
 2. [Skills](docs/skills.md)
-3. [OpenClaw](docs/openclaw.md)
-4. [Websites](docs/websites.md)
-5. [Getting Started](docs/getting-started.md)
-6. [Benchmarks](docs/benchmarks.md)
-7. [Papers](docs/papers.md)
-8. [Research Topics](docs/research-topics.md)
+3. [Websites](docs/websites.md)
+4. [Getting Started](docs/getting-started.md)
+5. [Benchmarks](docs/benchmarks.md)
+6. [Papers](docs/papers.md)
+7. [Research Topics](docs/research-topics.md)
 
 ## 推荐使用方式
 

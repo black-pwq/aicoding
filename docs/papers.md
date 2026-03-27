@@ -32,6 +32,25 @@
 
 整理 benchmark、实验研究和分析类论文，帮助理解当前研究如何被验证。
 
+## 当前建议优先阅读
+
+### 1. 综述与概念入口
+
+- [A Survey of Vibe Coding with Large Language Models](https://arxiv.org/abs/2510.12399)
+  一篇聚焦 Vibe Coding 的综述论文，适合作为建立整体问题空间、研究脉络和系统分类的入口。
+- [Vibe coding: programming through conversation with artificial intelligence](https://arxiv.org/abs/2506.23253)
+  这篇论文更偏概念界定与交互范式讨论，适合用来理解“vibe coding”作为一种人与 AI 协同编程方式到底意味着什么。
+
+### 2. 安全与风险分析
+
+- [Is Vibe Coding Safe? Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks](https://arxiv.org/abs/2512.03262)
+  关注 agent 生成代码在真实任务中的安全脆弱性问题，适合作为“效率之外还要怎么看风险”的必读材料。
+
+### 3. 评测与基准
+
+- [Vibe Code Bench: Evaluating AI Models on End-to-End Web Application Development](https://arxiv.org/abs/2603.04601)
+  一个面向端到端 Web 应用开发的评测工作，适合用来理解当下模型和 agent 在真实开发任务上的能力边界与评估方式。
+
 ## 后续可补充内容
 
 - 按研究主题分层的论文索引
