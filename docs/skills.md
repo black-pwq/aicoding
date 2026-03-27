@@ -4,7 +4,18 @@
 
 ## 当前收录
 
-### 1. Superpowers
+### 1. Skill Creator
+
+- `skill-creator`
+- 来源：本地预装系统技能
+
+Skill Creator 是一个用于创建和更新 skills 的指导型技能，重点在于帮助 agent 产出结构清晰、触发条件明确、上下文成本可控的高质量 skill。
+
+它强调 skill 应该保持精简，把核心流程写进 `SKILL.md`，把变体细节、参考资料、脚本和资产分层管理，适合用来研究“如何系统化沉淀 agent 能力”。
+
+在不同 agent 平台中，这类技能通常通过“显式调用技能名”或在任务意图中明确表达“创建/更新一个 skill”来触发。例如在 Claude Code 中通常通过 `Skill` 工具加载；在 Codex 环境中则通常由系统内置的 skills 发现与触发机制根据用户请求匹配加载。
+
+### 2. Superpowers
 
 - [Superpowers](https://github.com/obra/superpowers)
 
