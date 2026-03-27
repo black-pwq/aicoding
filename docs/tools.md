@@ -38,7 +38,7 @@
 - [Happy Coder](https://happy.engineering/docs/)
   一个面向 Claude Code、Codex 等 AI coding agents 的移动端与远程控制工具，适合“离开工位后继续看 agent 在做什么”这类场景。
 
-### 3. 模型接入与中转
+### 3. 自建中转站
 
 - [Sub2API](https://github.com/Wei-Shaw/sub2api)
   一个面向订阅额度分发与 API Key 管理的 AI API gateway platform，强调多账户管理、鉴权计费、负载调度、并发控制和管理面板，适合作为 Claude Code、Codex、Gemini 等上层工具的模型接入层。
