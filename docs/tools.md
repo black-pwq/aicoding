@@ -57,8 +57,6 @@
   目前最主流的海外中转平台，统一 OpenAI 兼容接口接入 Claude、GPT、Gemini、Llama 等数百个模型，按量计费，支持 fallback 和模型路由。
 - [硅基流动 SiliconFlow](https://siliconflow.cn/)
   国内主流中转平台，接入通义、GLM、DeepSeek、Llama 等模型，提供 OpenAI 兼容 API，部分开源模型有免费额度。
-- [DeepSeek 开放平台](https://platform.deepseek.com/)
-  DeepSeek 官方 API 平台，提供 DeepSeek-V3、DeepSeek-R1 等模型的直接接入，价格较低，国内访问友好。
 
 ### 5. 提示词与内容辅助
 
