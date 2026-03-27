@@ -77,7 +77,6 @@ aicoding/
 
 - [tools.md](docs/tools.md)
 - [skills.md](docs/skills.md)
-- [openclaw.md](docs/openclaw.md)
 - [websites.md](docs/websites.md)
 - [benchmarks.md](docs/benchmarks.md)
 
