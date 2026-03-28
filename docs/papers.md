@@ -3,6 +3,8 @@
 本页用于整理 AI coding（Vibe Coding）/ Coding Agent 方向的重要论文，服务于论文阅读、研究追踪与选题分析。
 
 > 如需持续跟踪新论文，可参考 [Paper Tracking SOP](paper-tracking-sop.md)。
+>
+> 针对入门读者的 Top 10 必读论文及阅读路线，见 [Reading Guide](reading-guide.md)。
 
 ## 论文入口工具
 
@@ -333,4 +335,3 @@
 
 - 按研究主题分层的论文索引
 - 每篇论文的简短摘要与价值说明
-- 实验室内部推荐阅读顺序
