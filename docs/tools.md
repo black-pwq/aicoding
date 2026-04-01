@@ -32,6 +32,8 @@
 
 - [Mem0](https://github.com/mem0ai/mem0)
   为 AI agent 提供持久化记忆层，支持跨会话的上下文记忆管理，适合在 Coding Agent 工作流中保持项目理解的连续性。
+- [Spec Kit](https://github.com/github/spec-kit)
+  GitHub 开源的规范驱动开发（Spec-Driven Development）工具包，通过 `/specify`、`/plan`、`/tasks`、`/implement` 等命令，将模糊需求转化为结构化的规格文档和技术方案，再由 AI coding agents 落地为代码。强调“先文档后实现”，适合需要规范流程、多人协作或长期维护的项目。
 
 ## 辅助工具
 
@@ -69,11 +71,6 @@
 
 - [PromptUp](https://promptup.net/)
   一个提示语收集与浏览网站，适合在需要快速参考 prompt 写法、任务模板和表达方式时作为辅助入口使用。
-
-### 6. 流程与规范工具
-
-- [Spec Kit](https://github.com/github/spec-kit)
-  GitHub 开源的规范驱动开发（Spec-Driven Development）工具包，通过 `/specify`、`/plan`、`/tasks`、`/implement` 等命令，将模糊需求转化为结构化的规格文档和技术方案，再由 AI coding agents 落地为代码。强调“先文档后实现”，适合需要规范流程、多人协作或长期维护的项目。
 
 ## 科研工具
 
