@@ -66,6 +66,9 @@ payload="$(jq -n \
     base_ref: $base_ref
   }')"
 
+printf "payload: %s\n" "${payload}"
+printf "github_repository: %s\n" "${github_repository}"
+
 curl --fail-with-body -sS \
   -X POST \
   -H "Authorization: Bearer ${GITHUB_TOKEN}" \
