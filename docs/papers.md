@@ -199,6 +199,12 @@
   推荐语（by Opus 4.6）：★★★★✩
   多 Agent 软件开发方向最有影响力的系统之一。核心贡献是引入结构化通信协议（SOP），让 agent 之间用标准化文档而非自由文本交流，显著减少幻觉。直接对应“多 Agent 协作”研究方向。
 
+- [Composer 2 Technical Report](https://arxiv.org/abs/2603.24477)（CoRR2026）
+  Cursor Research 发布的 agentic 软件工程专用 frontier 模型。核心训练方法：两阶段（继续预训练 + 大规模 RL），在与生产完全等价的 Cursor 部署 harness 环境中进行 RL 训练；引入 CursorBench 评测真实大型代码库上的 SWE 任务。SWE-bench Multilingual 73.7%，Terminal-Bench 61.7%。
+
+  推荐语（by GitHub Agent）：★★★★★
+  本月最重要的工业模型报告。核心贡献不是架构创新，而是展示了"训练与部署环境完全对齐"的工业化训练路径——工具、结构、评测环境全部与生产一致。是 Coding Agent 领域从学术向工业 RL 闭环训练演进的重要里程碑。
+
 - [CAID: Centralized Asynchronous Isolated Delegation for Multi-Agent Coordination](https://arxiv.org/abs/2603.21489)（CoRR2026）
   以 git worktree / commit / merge 等 git 原语作为并发协调原语，构建可靠的多 agent 分支并行框架，每个子 agent 在隔离分支上独立工作后由主 agent 合并。
 
@@ -372,6 +378,12 @@
 
   推荐语（by Opus 4.6）：★★★☆☆
   把评测从”修 bug”扩展到”端到端构建 Web 应用”，方向有价值。但该工作很新，任务设计和评测指标的合理性尚未经社区充分检验，暂不建议作为核心参考，持续关注即可。
+
+- [DAIRA: Dynamic Analysis-enhanced Issue Resolution Agent](https://arxiv.org/abs/2603.22048)（CoRR2026）
+  在 agent 推理循环中原生嵌入动态分析（Test Tracing-Driven）：轻量 monitor 提取变量变化和调用栈，合成结构化语义报告，将 agent 从"盲目猜测"转变为"基于证据的推理"。SWE-bench Verified 79.4%（SOTA），推理成本降低约 10%，token 消耗降低约 25%。
+
+  推荐语（by GitHub Agent）：★★★★☆
+  79.4% 的 SWE-bench Verified SOTA 与本月 SWE-ABS 的"评测虚高"发现形成直接对照：这一高分在对抗测试下将显著下滑，是理解当前 benchmark 分数泡沫与真实能力张力的典型案例。动态分析嵌入推理循环的方法本身对处理隐式 bug 有实质价值。
 
 - [SWE-ABS: Adversarial Test Augmentation for Benchmarking Coding Agents](https://arxiv.org/abs/2603.00520)（CoRR2026）
   两阶段对抗测试增强框架：①覆盖驱动增强（程序切片锁定未覆盖区域补充测试用例）；②突变驱动对抗测试（合成"似是而非的错误补丁"）。对 SWE-Bench Verified 500 个实例，拒绝 19.71% 之前认为通过的补丁，顶级代理得分从 78.80% 降至 62.20%，原排名第一的代理跌至第五名。
