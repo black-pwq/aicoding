@@ -202,14 +202,8 @@
 - [Composer 2 Technical Report](https://arxiv.org/abs/2603.24477)（CoRR2026）
   Cursor Research 发布的 agentic 软件工程专用 frontier 模型。核心训练方法：两阶段（继续预训练 + 大规模 RL），在与生产完全等价的 Cursor 部署 harness 环境中进行 RL 训练；引入 CursorBench 评测真实大型代码库上的 SWE 任务。SWE-bench Multilingual 73.7%，Terminal-Bench 61.7%。
 
-  推荐语（by GitHub Agent）：★★★★☆
-  展示了"在自身产品 harness 等价环境中进行 RL 训练"的工业化闭环路径，工具、结构和评测环境全部与部署一致。技术报告随模型迭代时效性有限，但该训练范式对理解如何构建 agent 专用 frontier 模型具有持久参考价值。
-
-- [CAID: Centralized Asynchronous Isolated Delegation for Multi-Agent Coordination](https://arxiv.org/abs/2603.21489)（CoRR2026）
-  以 git worktree / commit / merge 等 git 原语作为并发协调原语，构建可靠的多 agent 分支并行框架，每个子 agent 在隔离分支上独立工作后由主 agent 合并。
-
-  推荐语（by GitHub Agent）：★★★★☆
-  用 git 原语替代自定义并发机制，是将工程成熟工具引入 agent 协调的有洞察力的选择。在 PaperBench 上提升 26.7%，展示了异步隔离委托在复杂任务上的效果。
+  推荐语（by Opus 4.6）：★★★★☆
+  首个公开的 agentic SWE 专用 frontier 模型技术报告，核心价值在于展示了"在自身产品 harness 等价环境中做 RL"的训练范式——工具链、沙箱结构、评测环境与生产部署完全一致。作为技术报告，具体数字将被后续版本超越，但这种训练范式对理解如何构建 agent 专用模型具有持久参考价值。
 
 ### 4. 上下文工程
 
@@ -270,8 +264,8 @@
 - [FastCode: Structural Scouting for Repository-Scale Reasoning](https://arxiv.org/abs/2603.01012)（CoRR2026）
   将仓库级推理拆分为"轻量结构侦察"和"目标内容读取"两阶段；侦察阶段构建高价值摘要地图，避免全文遍历，显著降低 token 消耗并提升定位准确率。
 
-  推荐语（by GitHub Agent）：★★★★☆
-  解耦探索与读取的思路切实解决了"读太多 vs. 读错了"的张力；在 SWE-QA、LOC-BENCH 和 GitTaskBench 上均表现领先，token 效率改善明显，是上下文工程在仓库级 agent 场景的精炼实践。
+  推荐语（by Opus 4.6）：★★★★☆
+  将仓库级推理拆分为"轻量结构侦察"和"目标内容读取"两阶段，精准解决了"全文遍历 token 爆炸"与"盲目定位失准"之间的张力。在 SWE-QA、LOC-BENCH、GitTaskBench 三个基准上均表现领先且 token 效率显著改善，是上下文工程在仓库级 agent 场景的扎实实践。
 
 ### 5. 安全与风险分析
 
@@ -301,12 +295,6 @@
 
   推荐语（by Opus 4.6）：★★☆☆☆
   关注多 agent 防御 jailbreak 攻击，这是通用 LLM 安全领域的问题，与 AI Coding / Coding Agent 方向的关联性弱。除非专门做安全方向，否则优先级很低。
-
-- [How are AI Agents Used? Evidence from 177,000 MCP Tools](https://arxiv.org/abs/2603.23802)（CoRR2026）
-  对 2024-11 至 2026-02 期间 177,436 个公开 MCP 工具进行大规模生态监测，发现软件开发占所有工具的 67%；action 工具（直接修改外部环境）占比在 16 个月内从 27% 升至 65%，高风险操作（金融交易、物理执行）已出现。
-
-  推荐语（by GitHub Agent）：★★★★☆
-  首个基于大规模 MCP 仓库监测的工具生态研究，将 agent 能力演化趋势量化为可验证数据。action 工具占比的快速上升揭示了 agent 系统向高后果操作扩张的现实风险，对安全边界设计和监管政策都有直接参考价值。
 
 ### 6. 评测与基准
 
@@ -358,38 +346,32 @@
 - [SWE-ABS: Adversarial Test Augmentation for Benchmarking Coding Agents](https://arxiv.org/abs/2603.00520)（CoRR2026）
   两阶段对抗测试增强框架：①覆盖驱动增强（程序切片锁定未覆盖区域补充测试用例）；②突变驱动对抗测试（合成"似是而非的错误补丁"）。对 SWE-Bench Verified 500 个实例，拒绝 19.71% 之前认为通过的补丁，顶级代理得分从 78.80% 降至 62.20%，原排名第一的代理跌至第五名。
 
-  推荐语（by GitHub Agent）：★★★★★
-  SWE-bench 评测质量的系统性批判：每 5 个"已解决"补丁中约有 1 个是语义错误的。所有基于 SWE-bench 数值的系统比较都应在增强测试集上重验结论。对 benchmark 方法论的影响不亚于 SWE-bench 本身——是整个 Coding Agent 评测体系的必读参照。
+  推荐语（by Opus 4.6）：★★★★✩
+  对 SWE-bench——本方向事实评测标准——的可靠性提出系统性质疑：19.71% 的"已解决"补丁在对抗测试下暴露为语义错误，顶级 agent 排名发生实质性变化。两阶段框架（覆盖驱动增强 + 突变驱动对抗）方法论严谨，结论具有跨年持久性——只要 SWE-bench 仍是标准基准，这篇就是必要的修正参照。未给满分是因为它改进而非定义评测范式。
 
 - [BeyondSWE: Can Code Agents Survive Beyond Single-Repo Bug Fixing?](https://arxiv.org/abs/2603.03194)（CoRR2026）
   将评测范围扩展至跨仓库推理、领域专业化和完整仓库生成（500 个真实实例）；所有前沿模型均在 45% 以下停滞，无一模型能在所有任务类型上持续良好表现。
 
-  推荐语（by GitHub Agent）：★★★★☆
-  将 coding agent 评测从单仓 bug fix 扩展到跨仓库推理和完整仓库生成，填补了重要的能力评测空白。随着类似"超越 SWE-bench"的扩展工作不断涌现，其方向先导价值高于具体数字本身。
+  推荐语（by Opus 4.6）：★★★★☆
+  将 Coding Agent 评测从单仓 bug fix 扩展到跨仓库推理、领域专业化和完整仓库生成三个维度，500 个真实实例覆盖面扎实。所有前沿模型均在 45% 以下停滞的结论揭示了当前 agent 能力的天花板。填补了 SWE-bench 单仓范式之外的重要评测空白，方向先导价值高于具体数字。
 
 - [SlopCodeBench: Benchmarking Code Quality Degradation in Iterative Agent Tasks](https://arxiv.org/abs/2603.24755)（CoRR2026）
   针对多轮迭代任务设计的代码质量退化基准：80% 的 agent 轨迹随迭代轮次出现结构侵蚀（圈复杂度/重复代码/可维护性指数恶化），揭示 agent 在迭代任务中逐步牺牲代码质量来维持功能通过率的系统性模式。
 
-  推荐语（by GitHub Agent）：★★★★☆
-  将"功能通过率"之外的代码质量维度引入 agent 评测，揭示了迭代任务中持续退化的系统性模式。在 vibe coding 范式普及的背景下，这个维度的缺失是现有评测体系的真实盲点；benchmark 本身的社区采用度仍待验证。
-
-- [EnterpriseOps-Gym: Evaluating LLM Agents in Enterprise Operational Settings](https://arxiv.org/abs/2603.13594)（CoRR2026）
-  企业运营场景基准：164 张数据库表、512 个工具、1150 个多步骤任务，跨越财务/HR/供应链/CRM 等真实企业工作流。最强模型得分仅 37.4%，战略推理（序列决策和多领域协调）是核心瓶颈。
-
-  推荐语（by GitHub Agent）：★★★★☆
-  填补了学术评测与企业实际落地之间的鸿沟，定量揭示了最强模型在真实企业工作流中的能力缺口（37.4%）。垂直领域 benchmark，但"战略推理是瓶颈而非工具调用"的结论具有跨领域参考意义。
+  推荐语（by Opus 4.6）：★★★★☆
+  揭示了现有评测体系的真实盲点——agent 在多轮迭代中系统性地牺牲代码质量来维持功能通过率。80% 的轨迹出现结构侵蚀（圈复杂度、重复代码、可维护性指数恶化）这一发现，对 vibe coding 范式下代码资产长期可维护性敲响警钟。将"功能正确之外的质量维度"引入 agent 评测，是现有 benchmark 的必要补充。
 
 - [SWE-CI: Evaluating Agent Capabilities in Maintaining Codebases via Continuous Integration](https://arxiv.org/abs/2603.03823)（CoRR2026）
   首个基于 CI 循环的 repo 级 benchmark：100 个任务覆盖平均 233 天开发历史，要求 agent 保持仓库在演化过程中持续通过 CI。评测维度从"单点修复"扩展至"长期可维护性"。
 
-  推荐语（by GitHub Agent）：★★★★☆
-  将评测范式从一次性 bug 修复推进到 CI 驱动的长期可维护性，覆盖 233 天开发历史的连续性要求在同类 benchmark 中罕见。方向高度前瞻；需社区广泛采用才能真正确立其基准地位，与 SWE-ABS、BeyondSWE 配合阅读可构建完整评测视角。
+  推荐语（by Opus 4.6）：★★★★☆
+  将评测范式从一次性 bug 修复推进到 CI 驱动的长期可维护性——agent 不仅要修问题，还要在 233 天开发历史的持续演化中保持仓库 CI 通过。这是现有评测中罕见的"时间维度"要求。与 SWE-ABS（评测可靠性）和 BeyondSWE（任务类型扩展）配合阅读，可构建 SWE-bench 之后的完整评测视角。
 
 - [SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?](https://arxiv.org/abs/2603.15401)（CoRR2026）
   对 49 个公开 SWE skill（推理时注入的结构化知识包）进行严格有/无配对评测（≈565 个任务实例）：39 个 skill 零通过率提升，平均增益仅 +1.2%；token overhead 最高增加 451%；仅 7 个专业化 skill 有实质收益（最高 +30%）；3 个 skill 因版本不匹配反而降低性能。
 
-  推荐语（by GitHub Agent）：★★★★☆
-  对 skill injection 的快速社区采用提供了严格的实证否定：这是一种窄干预，效用强依赖领域契合度和版本兼容性。反直觉且有强实践警示价值，在为 agent 配置 skill 之前是必要参照。
+  推荐语（by Opus 4.6）：★★★★☆
+  对 skill injection——当前社区快速采用的 agent 增强手段——给出了严格的实证否定：49 个公开 skill 中 39 个零提升，平均增益仅 +1.2%，token overhead 最高增加 451%。反直觉的负面结果具有类似 Agentless 的批判价值——挑战了"给 agent 更多知识就能提升表现"的朴素假设。在为 agent 配置 skill 之前是必要参照。
 
 ## 后续可补充内容
 
